@@ -917,3 +917,103 @@ Processing by ArtigosController#show as HTML
 Completed 200 OK in 40ms (Views: 27.5ms | ActiveRecord: 0.3ms | Allocations: 4543)
 
 
+Started GET "/artigos/3" for 127.0.0.1 at 2021-10-21 09:30:29 -0300
+  [1m[35m (10.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtigosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtigo Load (0.2ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos" WHERE "artigos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/artigos_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/show.html.erb within layouts/application
+  Rendered artigos/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 432)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 21108)
+Completed 200 OK in 80ms (Views: 61.1ms | ActiveRecord: 1.2ms | Allocations: 30000)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArtigo Load (0.3ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos" WHERE "artigos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/artigo/1" for 127.0.0.1 at 2021-10-21 09:55:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/artigo/1"):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-21 09:55:08 -0300
+Processing by ArtigosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/artigos/index.html.erb:4
+  [1m[36mArtigo Load (0.2ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos"[0m
+  ↳ app/views/artigos/index.html.erb:4
+  Rendered artigos/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 8040)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.5ms | Allocations: 9534)
+
+
+Started GET "/artigos/1" for 127.0.0.1 at 2021-10-21 09:55:13 -0300
+Processing by ArtigosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtigo Load (0.2ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos" WHERE "artigos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artigos_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/show.html.erb within layouts/application
+  Rendered artigos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 47)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3526)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 4774)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-21 09:55:16 -0300
+Processing by ArtigosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/index.html.erb within layouts/application
+  [1m[36mArtigo Load (0.1ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos"[0m
+  ↳ app/views/artigos/index.html.erb:4
+  Rendered artigos/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4276)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 4732)
+
+
+Started GET "/artigos/2" for 127.0.0.1 at 2021-10-21 09:55:24 -0300
+Processing by ArtigosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtigo Load (0.2ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos" WHERE "artigos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/artigos_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/show.html.erb within layouts/application
+  Rendered artigos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3524)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 4531)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-21 10:19:48 -0300
+Processing by ArtigosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/artigos/index.html.erb:4
+  [1m[36mArtigo Load (0.2ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos"[0m
+  ↳ app/views/artigos/index.html.erb:4
+  Rendered artigos/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4334)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 8178)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 1.0ms | Allocations: 10188)
+
+
+Started GET "/artigos/2" for 127.0.0.1 at 2021-10-21 10:19:50 -0300
+Processing by ArtigosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtigo Load (0.2ms)[0m  [1m[34mSELECT "artigos".* FROM "artigos" WHERE "artigos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/artigos_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering artigos/show.html.erb within layouts/application
+  Rendered artigos/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3624)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.2ms | Allocations: 5015)
+
+
