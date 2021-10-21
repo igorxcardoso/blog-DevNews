@@ -3,10 +3,13 @@
 <ul>
     <% @artigos.each do |artigo| %>
         <li>
+            <%# --> href= "/artigos/"<%= artigo.id%>
+
             <%# <a href= "<%= artigo_path(artigo)" %>
             <%#   artigo_path faz parte dos helps %>
 
-            <%= link_to artigo.titulo, artigo %>
+            <%= link_to(artigo.titulo, artigo) %>
+            <%# O link_to é um help, no primeira argumeto é a string que será mostrsda e no segundo o é artigo, e dele será extraido o id %>
             <%# </a> %>
         </li>
     <% end %>
