@@ -1,0 +1,21 @@
+<h1>Novo Artigo</h1>
+
+<%# Esse o @artigo do controller %>
+<%= form_with(model: @artigo) do |form| %>
+    <div>
+        <%= form.label :titulo %>
+        <%= form.text_field :titulo %>
+    </div>
+
+
+    <div>
+        <%= form.label :corpo %>
+        <%= form.text_area :corpo %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+
+<% end %>
+<%# form_with é um help que recebe o artigo como parâmetro %>
