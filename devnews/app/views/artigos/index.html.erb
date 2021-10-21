@@ -1,0 +1,13 @@
+<h1>Artigos</h1>
+
+<ul>
+    <% @artigos.each do |artigo| %>
+        <li>
+            <%# <a href= "<%= artigo_path(artigo)" %>
+            <%#   artigo_path faz parte dos helps %>
+
+            <%= link_to artigo.titulo, artigo %>
+            <%# </a> %>
+        </li>
+    <% end %>
+</ul>
